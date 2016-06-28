@@ -1,0 +1,20 @@
+{
+  "name": "miniport-geser",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/students-org/miniport-geser/tree/master"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap-styl": "^5.0.5",
+    "jade": "^1.11.0",
+    "stylus": "^0.54.5"
+  }
+}
