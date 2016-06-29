@@ -1,0 +1,37 @@
+.contactUs
+  background-image url('./images/bg.png')
+  background-color #303030
+  text-align center
+  color white
+  padding-bottom 8rem
+  input, textarea
+    @extend $shadowInputs
+    border none
+    background #282828
+    display block
+    color #404040
+    border-radius 0.55rem
+    line-height 4rem
+    font-size 1.4rem
+    padding-left 1rem
+    margin-top 1rem
+    width 100%
+    margin-left 0
+    margin-right 0
+    margin-top 1rem
+    letter-spacing -0.025rem
+    font-weight 300
+    margin-bottom 1rem
+    @media (max-width 768px)
+      line-height 2.2rem
+      font-size 1rem
+  input:first-child
+    margin-right 2rem
+  textarea
+    resize none
+  a
+    display inline-block
+    margin 1.5rem
+    margin-top 3rem
+  a:last-child
+    @extend $shadowIcon
