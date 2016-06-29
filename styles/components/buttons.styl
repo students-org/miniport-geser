@@ -1,6 +1,7 @@
 .button
   @extend $shadowButton
   @extend $shadowText_black
+  text-align center
   text-decoration none
   padding 1.5rem 3.2rem
   color #fff
@@ -17,8 +18,9 @@
                   
   transition 0.3s ease-in-out
   @media (max-width 768px)
+    display block
+    margin auto
     width 90%
-    margin 1rem 0
   &_blue
     background-color #43B3E0
   &_blue:hover
