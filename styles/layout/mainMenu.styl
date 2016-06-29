@@ -1,4 +1,4 @@
-.mainMenu
+.navbar
   position fixed
   top 0
   left 0
@@ -8,14 +8,26 @@
   color white
   text-align center
   z-index 5
-  &__item
-    display inline-block
-  &__button
-    padding 0.4rem 1rem
-    margin 0.6rem 0.2rem
-    border-radius 0.35rem
-    color white
-    text-decoration none
-    font-weight 600
-    &:hover
-      background-color #383838
+  font-size 1.25rem
+  .menuSwitcher
+    color #fff
+    &:checked .mainMenu
+      display block
+
+    @media all and (min-width:768px)
+      display none
+  .mainMenu
+    margin 0
+    @media all and (max-width:768px)
+      display none
+    &__item
+      display inline-block
+    &__button
+      padding 0.4rem 1rem
+      margin 0.6rem 0.2rem
+      border-radius 0.35rem
+      color white
+      text-decoration none
+      font-weight 600
+      &:hover
+        background-color #383838
