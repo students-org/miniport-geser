@@ -9,17 +9,21 @@
   text-align center
   z-index 5
   font-size 1.25rem
-  .menuSwitcher
-    color #fff
-    &:checked .mainMenu
-      display block
-
+  .mainMenu__switcher
+    float right
+    cursor pointer
+    z-index 6
     @media all and (min-width:768px)
-      display none
+      opacity 0
+  #menu
+    &:checked ~ .mainMenu
+      opacity 1
   .mainMenu
     margin 0
+    transition 0.5s ease-in-out
     @media all and (max-width:768px)
-      display none
+      width 85%
+      opacity 0
     &__item
       display inline-block
     &__button
