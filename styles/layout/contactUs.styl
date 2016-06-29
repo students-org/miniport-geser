@@ -4,8 +4,11 @@
   text-align center
   color white
   padding-bottom 8rem
+  padding-top 8rem
   .container
     max-width 50%
+    @media (max-width 768px)
+      max-width 100%
     input, textarea
       @extend $shadowInputs
       border none

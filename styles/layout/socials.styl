@@ -6,15 +6,17 @@
   padding-bottom 8rem
   .container
     max-width 50%
+    @media (max-width 768px)
+      max-width 100%
   
 .social
   list-style none
   display block
   &__icon
     @extend $shadowIcon
-    position relative
     list-style none
     display inline-block
+    position relative
     transition .3s ease-in-out
     border-radius 6px
     width 3rem
@@ -57,3 +59,18 @@
     &_github:hover
       top -0.3rem
       background-color #FAFAFA
+    @media (max-width 768px)
+      &_twitter
+
+      &_facebook
+        background-color #3C5A98
+      &_dribbble
+        background-color #C4376B
+      &_linkedin
+        background-color #006599
+      &_tumblr
+        background-color #51718A
+      &_google
+        background-color #DA2713
+      &_github
+        background-color #FAFAFA

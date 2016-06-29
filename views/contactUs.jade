@@ -1,9 +1,10 @@
 .section.contactUs(name='contactUs')
   .container
-    h2
-      | Have me make stuff for you.
-    p
-      | Ornare nulla proin odio consequat sapien vestibulum ipsum sed lorem.
+    .sectionHeader
+      h2.sectionHeader__caption.sectionHeader__caption_footer
+        | Have me make stuff for you.
+      p.sectionHeader__description.sectionHeader__description_footer
+        | Ornare nulla proin odio consequat sapien vestibulum ipsum sed lorem.
     .row
       .col-sm-6.input_block
         input(type="text" value="Name")
@@ -18,3 +19,4 @@
           | Send Message
         button.button_gray.button(href='#')
           | Clear Form
+    hr.delimeter
