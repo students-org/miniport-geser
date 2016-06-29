@@ -3,11 +3,11 @@
   background-color #303030
   text-align center
   color white
-  padding-bottom 8rem
+  padding-bottom 3rem
   padding-top 8rem
   .container
     max-width 50%
-    @media (max-width 768px)
+    @media (max-width 1100px)
       max-width 100%
     input, textarea
       @extend $shadowInputs
@@ -38,5 +38,7 @@
       display inline-block
       margin 1.5rem
       margin-top 3rem
+      @media (max-width 768px)
+        margin 0.5rem 0 0.2rem
     button:last-child
       @extend $shadowIcon
