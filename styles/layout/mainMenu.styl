@@ -18,12 +18,17 @@
   #menu
     &:checked ~ .mainMenu
       opacity 1
+      @media all and (max-width:600px)
+        height 70px
   .mainMenu
     margin 0
     transition 0.5s ease-in-out
     @media all and (max-width:768px)
       width 85%
+      height 35px
       opacity 0
+    @media all and (max-width:600px)
+      height 35px
     &__item
       display inline-block
     &__button
