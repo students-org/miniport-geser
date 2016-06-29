@@ -1,0 +1,76 @@
+.socials
+  background-image url('./images/bg.png')
+  background-color #303030
+  text-align center
+  color white
+  padding-bottom 3rem
+  .container
+    max-width 50%
+    @media (max-width 768px)
+      max-width 100%
+  
+.social
+  list-style none
+  display block
+  &__icon
+    @extend $shadowIcon
+    list-style none
+    display inline-block
+    position relative
+    transition .3s ease-in-out
+    border-radius 6px
+    width 3rem
+    height @width
+    background-image url('./images/bg.png')
+    background-color #434343
+    text-align center
+    margin 0.5rem
+    border 0.5px solid #222
+    a
+      vertical-align center
+      border-radius 6px
+      text-decoration none
+      display block
+      transition .3s ease-in-out
+      i
+        @extend $shadowText_white
+        color #303030
+        font-size 1.7rem
+        margin-top 0.7rem
+    
+    &_twitter:hover
+      top -0.3rem
+      background-color #2DAAE4
+    &_facebook:hover
+      top -0.3rem
+      background-color #3C5A98
+    &_dribbble:hover
+      top -0.3rem
+      background-color #C4376B
+    &_linkedin:hover
+      top -0.3rem
+      background-color #006599
+    &_tumblr:hover
+      top -0.3rem
+      background-color #51718A
+    &_google:hover
+      top -0.3rem
+      background-color #DA2713
+    &_github:hover
+      top -0.3rem
+      background-color #FAFAFA
+    @media (max-width 768px)
+      &_twitter
+
+      &_facebook
+        background-color #3C5A98
+      &_dribbble
+        background-color #C4376B
+      &_linkedin
+        background-color #006599
+      &_tumblr
+        background-color #51718A
+      &_google
+        background-color #DA2713
+      &_github
+        background-color #FAFAFA
