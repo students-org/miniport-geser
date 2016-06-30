@@ -1,4 +1,4 @@
 node_modules/
 /style.css
 /index.html
-npm-debug.log
+*.log
